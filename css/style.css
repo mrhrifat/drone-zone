@@ -1,0 +1,603 @@
+/*
+    Author: Rakibul Hassan Rifat
+
+*/
+/*
+	==========Index=========
+	01) Variable Section
+	02)	Global CSS Section
+	03) Mixin Section
+	04) Inheritence Section
+	05) Header Section
+	06) Pricing Section
+	07) About Section
+    08) Our Drone Section
+    09) Realiziation Section
+    10) Contact Section
+    11) Location Section
+    12) Footer Section
+    13) Media Query
+	========================
+*/
+/*===== Variable Section =====*/
+/*===== 01) Global CSS Section =====*/
+.nav_fixed {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: 0;
+  right: 0;
+  background: #CF1E24;
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  z-index: 999;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  padding: 0 1rem;
+}
+
+.pricing,
+.about,
+.drone,
+.realizations,
+.contact,
+.location {
+  padding: 90px 0;
+}
+
+/*===== Mixin Section =====*/
+/*===== Inheritence Section =====*/
+.drone-left, .drone .left, .realizations .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.drone-left a, .drone .left a, .realizations .right a {
+  font-size: 30px;
+  color: white;
+}
+
+.drone-right h2, .drone .right h2, .realizations .left h2 {
+  font-family: "Dosis", sans-serif;
+}
+
+.drone-right p, .drone .right p, .realizations .left p {
+  font-family: "Abel", sans-serif;
+  width: 60%;
+}
+
+.drone-right button, .drone .right button, .realizations .left button {
+  background: #2A4A9B;
+  color: #fff;
+  padding: 5px 25px;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  border-radius: 20px;
+  border: 1px solid #2A4A9B;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+
+.drone-right button:focus, .drone .right button:focus, .realizations .left button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.drone-right button:hover, .drone .right button:hover, .realizations .left button:hover {
+  background: #2A4A9B;
+  color: #fff;
+  padding: 5px 25px;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  border-radius: 20px;
+  border: 1px solid #2A4A9B;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  background: #fff;
+  border: 1px solid #2A4A9B;
+  color: #CF1E24;
+}
+
+/*===== Header Section =====*/
+.header {
+  background-image: url("../img/background.jpg");
+  background-size: 100% 100%;
+  height: 630px;
+  min-height: 100%;
+  position: relative;
+}
+
+.header .navbar .navbar-brand img {
+  width: 45%;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.header .navbar .navbar-brand span {
+  font-family: "Dosis", sans-serif;
+  color: #fff;
+}
+
+.header .navbar .navbar-brand span strong {
+  font-weight: 700;
+}
+
+.header .navbar #navBar ul li {
+  margin: 0 5px;
+}
+
+.header .navbar #navBar ul li a {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Abel", sans-serif;
+}
+
+.header .navbar #navBar ul li a:hover {
+  color: #0D1117;
+}
+
+.header .navbar #navBar ul li a.active {
+  color: #0D1117;
+}
+
+.header .navbar #navBar ul li .cn {
+  border: 1px solid #fff;
+  border-radius: 30px 30px;
+  padding: 7px 15px;
+}
+
+.header .title .content {
+  position: absolute;
+  width: 33%;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  -webkit-transform: translateY(45%);
+          transform: translateY(45%);
+}
+
+.header .title .content h2 {
+  font-family: "Dosis", sans-serif;
+  color: #fff;
+  font-size: 34px;
+}
+
+.header .title .content p {
+  font-family: "Abel", sans-serif;
+}
+
+.header .title .content .content-btn .btn {
+  padding: 7px 20px;
+  background: #fff;
+  color: #CF1E24;
+  font-family: "Abel", sans-serif;
+  border-radius: 20px;
+  margin: 20px 5px;
+}
+
+.header .title .content .content-btn .classic:hover {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.header .title .content .content-btn .special {
+  background: transparent;
+  color: white;
+  border: 1px solid #fff;
+}
+
+.header .title .content .content-btn .special svg {
+  margin: 0 4px;
+}
+
+.header .title .content .content-btn .special:hover {
+  padding: 7px 20px;
+  background: #fff;
+  color: #CF1E24;
+  font-family: "Abel", sans-serif;
+  border-radius: 20px;
+  margin: 20px 5px;
+}
+
+.header .title .content .content-btn .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header .title .content .animate .icon-scroll,
+.header .title .content .animate .icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+
+.header .title .content .animate .icon-scroll {
+  width: 25px;
+  height: 45px;
+  margin: 0 auto;
+  -webkit-box-shadow: inset 0 0 0 1px #fff;
+          box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+  margin-top: 125px;
+  cursor: pointer;
+}
+
+.header .title .content .animate .icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+/*===== Pricing Section =====*/
+.pricing {
+  background-color: #F5F5F5;
+}
+
+.pricing .main {
+  padding: 30px;
+  text-align: center;
+}
+
+.pricing .main .col-md-3 .logo {
+  background: -webkit-gradient(linear, left top, right top, from(#d10f45), to(#dc6900));
+  background: linear-gradient(90deg, #d10f45, #dc6900);
+  margin: 0 auto;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing .main .col-md-3 .logo svg {
+  color: #fff;
+  font-size: 30px;
+}
+
+.pricing .main .col-md-3 h3 {
+  font-family: "Dosis", sans-serif;
+  font-size: 25px;
+  margin: 15px 0;
+}
+
+.pricing .main .col-md-3 small {
+  font-family: "Abel", sans-serif;
+}
+
+.pricing .second {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.pricing .second .btn-custom {
+  background: #2A4A9B;
+  color: #fff;
+  padding: 5px 25px;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  border-radius: 20px;
+  border: 1px solid #2A4A9B;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+
+.pricing .second .btn-custom:hover {
+  background: #2A4A9B;
+  color: #fff;
+  padding: 5px 25px;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  border-radius: 20px;
+  border: 1px solid #2A4A9B;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+  -webkit-box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+          box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+  background: #fff;
+  border: 1px solid #2A4A9B;
+  color: #CF1E24;
+}
+
+/*===== About Section =====*/
+.about {
+  background: url("../img/drone.jpg") no-repeat;
+  background-size: 50% 100%;
+  background-position: right;
+}
+
+.about .head {
+  width: 50%;
+}
+
+.about .head h2 {
+  font-family: "Dosis", sans-serif;
+}
+
+.about .head p {
+  font-family: "Abel", sans-serif;
+}
+
+.about .main .sub-main {
+  padding: 10px 0;
+}
+
+.about .main .sub-main .serial h3 {
+  font-family: "Dosis", sans-serif;
+  border: 2px solid #D2CCCC;
+  text-align: center;
+  border-radius: 42px;
+  height: 42px;
+  width: 42px;
+}
+
+.about .main .sub-main .content small {
+  font-family: "Abel", sans-serif;
+  color: #938F8F;
+}
+
+/*===== Our Drone Section =====*/
+.drone {
+  background: url("../img/our-drones-1.jpg") no-repeat;
+  background-position: left;
+  background-size: 50% 100%;
+}
+
+/*===== Realiziation Section =====*/
+.realizations {
+  background: url("../img/our-drone-2.jpg") no-repeat;
+  background-position: right;
+  background-size: 50% 100%;
+}
+
+/*===== Contact Section =====*/
+.contact {
+  background: url("../img/signup-bg.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.contact .main {
+  max-width: 30%;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact .main h2 {
+  font-family: "Dosis", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.contact .main .form {
+  padding: 20px 10px 30px;
+}
+
+.contact .main .form input[type="email"] {
+  opacity: 0.5;
+  border: none;
+  border-radius: 20px;
+}
+
+.contact .main .form input[type="email"]:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.contact .main .form input[type="submit"] {
+  background: #fff;
+  font-family: "Abel", sans-serif;
+  border: 1px solid #fff;
+  padding: 0 15px;
+  border-radius: 20px;
+  margin-left: -50px;
+  color: #dc6900;
+}
+
+/*===== Location Section =====*/
+.location {
+  background: url("../img/location.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  padding: 220px 0;
+}
+
+/*===== Footer Section =====*/
+.footer {
+  background: #0D1117;
+  color: #CF1E24;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer p {
+  font-family: "Abel", sans-serif;
+  font-size: 18px;
+}
+
+/*===== Media Query Section =====*/
+@media screen and (max-width: 1120px) {
+  .contact .main {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header .navbar button {
+    border-color: none !important;
+    color: #fff !important;
+  }
+  .header .title .content {
+    width: 40%;
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
+  }
+  .about .main .sub-main .serial h3 {
+    border-radius: 35px;
+    height: 35px;
+    width: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 725px;
+    min-height: 100%;
+  }
+  .header .title .content {
+    -webkit-transform: translateY(15%);
+            transform: translateY(15%);
+  }
+  .pricing .main .sub-main {
+    margin: 20px 0;
+  }
+  .pricing .main .sub-main small {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  .about {
+    background-size: 80% 100%;
+  }
+  .about .main .sub-main .serial {
+    color: #0D1117;
+  }
+  .about .main .sub-main .content {
+    width: 60%;
+    display: block;
+    padding-bottom: 10px;
+  }
+  .about .main .sub-main .content small {
+    color: #111;
+  }
+  .drone {
+    background-size: 100% 100%;
+  }
+  .drone .drone-left, .drone .left, .drone .realizations .right, .realizations .drone .right {
+    padding: 50px 0;
+  }
+  .drone .right {
+    color: #fff;
+  }
+  .drone .right h2 {
+    color: #fff;
+  }
+  .realizations {
+    background-size: 100% 100%;
+  }
+  .realizations .right {
+    padding: 50px 0;
+  }
+  .contact .main {
+    max-width: 80%;
+  }
+  .location {
+    padding: 160px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header .title .content {
+    width: 50%;
+  }
+  .about {
+    background-size: 100% 100%;
+  }
+  .about .head {
+    width: 100%;
+  }
+  .about .main .sub-main .serial {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header .title .content {
+    width: 70%;
+  }
+  .location {
+    padding: 100px 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header .navbar {
+    padding-bottom: 5px;
+  }
+  .header .navbar a {
+    width: 100%;
+    text-align: center;
+  }
+  .header .navbar a img {
+    width: 40%;
+  }
+  .header .navbar button {
+    display: block;
+    margin: 0 auto;
+  }
+  .header .title .content {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
